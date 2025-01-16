@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            TheClock
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="mainstyles.css">
+    </head>
+    <body>
+        <div class="container">
+            <img src="simom-caban-yIRIBC3hXds-unsplash.jpg">
+            <h1 id="current-time"></h1>
+            <div class="quotes">
+                <p>QUOTE OF THE DAY</p>
+                <h2>"Time is what we want the most, but what we use worst."</h2>
+            </div>
+        </div>
+
+
+        <script>
+            let time = document.getElementById("current-time");
+
+            setInterval(() =>{
+                let d = new Date();
+            time.innerHTML = d.toLocaleTimeString(); 
+            },1000) 
+        </script>
+    </body>
+</html>
